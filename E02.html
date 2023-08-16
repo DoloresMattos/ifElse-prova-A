@@ -1,0 +1,91 @@
+<script>
+    /*
+    Problema: Salário Líquido
+    Em uma empresa, todos os funcionários trabalham 40H por semana. O salário bruto de cada funcionário é calculado de acordo com o cargo ocupado e quantos anos possui na empresa.
+    Faça um programa que receba o cargo ocupado pelo funcionário e o tempo de trabalho na empresa.
+    Considere que o salário bruto de um funcionário é calculado da seguinte forma:
+    - G-Gerente: R$ 30,00 por hora
+    - S-Supervisor: R$ 22,00 por hora
+    - A-Atendente: R$ 15,00 por hora
+    Sobre o tempo de trabalho, consisdere que:
+    - Se o funcionário possuir mais de 2 anos de empresa, ele recebe um bônus de 15% sobre o salário bruto
+    - Se o funcionário possuir mais de 4 anos de empresa, ele recebe um bônus de 25% sobre o salário bruto
+    - Se o funcionário possuir mais de 6 anos de empresa, ele recebe um bônus de 40% sobre o salário bruto
+    */
+
+    //Entrada
+    const cargoTrabalho = Number(prompt(`Qual seu cargo Gerente (G), Supervisor (S), Atendente (A)?`))
+    const tempoTrabalho = Number(prompt(`Quantos anos vc tem de empresa: mais de 2 anos (2 anos), mais de 4 anos (4 anos), mais de 6 anos (6 anos)?`))
+
+    //Processamento
+    if (cargoTrabalho = G) {
+        let soma1 = 40 * 30
+
+        if (tempoTrabalho >= 2) {
+            let soma2 = soma1 * 0.15;
+            alert(`O salário bruto vai ser de R$${soma2}`);
+
+            if (tempoTrabalho >= 4) {
+                let soma4 = soma1 * 0.25;
+                alert(`O salário bruto vai ser de R$${soma4}`);
+
+                if (tempoTrabalho >= 6) {
+                    let soma6 = soma1 * 0.40;
+                    alert(`O salário bruto será de R$${soma6}`)
+
+                    if (tempoTrabalho < 2) {
+                        alert(`Não tem bonûs!`)
+                    }
+                }
+            }
+        }
+    }
+    if (cargoTrabalho = A) {
+        let soma10 = 40 * 22
+
+        if (tempoTrabalho >= 2) {
+            let soma20 = soma10 * 0.15;
+            alert(`O salário bruto vai ser de R$${soma2}`);
+
+            if (tempoTrabalho >= 4) {
+                let soma40 = soma10 * 0.25;
+                alert(`O salário bruto vai ser de R$${soma4}`);
+
+                if (tempoTrabalho >= 6) {
+                    let soma60 = soma10 * 0.40;
+                    alert(`O salário bruto será de R$${soma6}`)
+
+                    if (tempoTrabalho < 2) {
+                        alert(`Não tem bonûs!`)
+                    }
+                }
+            }
+        }
+    }
+    if (cargoTrabalho = S) {
+        let soma00 = 40 * 15
+
+        if (tempoTrabalho >= 2) {
+            let soma0 = soma00 * 0.15;
+            alert(`O salário bruto vai ser de R$${soma2}`);
+
+            if (tempoTrabalho >= 4) {
+                let soma44 = soma00 * 0.25;
+                alert(`O salário bruto vai ser de R$${soma4}`);
+
+                if (tempoTrabalho >= 6) {
+                    let soma66 = soma00 * 0.40;
+                    alert(`O salário bruto será de R$${soma6}`)
+
+                    if (tempoTrabalho < 2) {
+                        alert(`Não tem bonûs!`)
+                    }
+                }
+            }
+        }
+    }
+
+
+    //Saída
+
+</script>
