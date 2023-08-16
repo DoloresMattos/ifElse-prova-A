@@ -14,23 +14,23 @@
     */
 
     //Entrada
-    const cargoTrabalho = Number(prompt(`Qual seu cargo Gerente (G), Supervisor (S), Atendente (A)?`))
+    const cargoTrabalho = prompt(`Qual seu cargo Gerente (G), Supervisor (S), Atendente (A)?`).toUpperCase();
     const tempoTrabalho = Number(prompt(`Quantos anos vc tem de empresa: mais de 2 anos (2 anos), mais de 4 anos (4 anos), mais de 6 anos (6 anos)?`))
 
     //Processamento
-    if (cargoTrabalho = G) {
+    if (cargoTrabalho == "G") {
         let soma1 = 40 * 30
 
         if (tempoTrabalho >= 2) {
-            let soma2 = soma1 * 0.15;
+            let soma2 = soma1 * 1.15;
             alert(`O salário bruto vai ser de R$${soma2}`);
 
             if (tempoTrabalho >= 4) {
-                let soma4 = soma1 * 0.25;
+                let soma4 = soma1 * 1.25;
                 alert(`O salário bruto vai ser de R$${soma4}`);
 
                 if (tempoTrabalho >= 6) {
-                    let soma6 = soma1 * 0.40;
+                    let soma6 = soma1 * 1.40;
                     alert(`O salário bruto será de R$${soma6}`)
 
                     if (tempoTrabalho < 2) {
@@ -40,19 +40,19 @@
             }
         }
     }
-    if (cargoTrabalho = A) {
+    if (cargoTrabalho == "A") {
         let soma10 = 40 * 22
 
         if (tempoTrabalho >= 2) {
-            let soma20 = soma10 * 0.15;
+            let soma20 = soma10 * 1.15;
             alert(`O salário bruto vai ser de R$${soma2}`);
 
             if (tempoTrabalho >= 4) {
-                let soma40 = soma10 * 0.25;
+                let soma40 = soma10 * 1.25;
                 alert(`O salário bruto vai ser de R$${soma4}`);
 
                 if (tempoTrabalho >= 6) {
-                    let soma60 = soma10 * 0.40;
+                    let soma60 = soma10 * 1.40;
                     alert(`O salário bruto será de R$${soma6}`)
 
                     if (tempoTrabalho < 2) {
@@ -62,19 +62,19 @@
             }
         }
     }
-    if (cargoTrabalho = S) {
+    if (cargoTrabalho == "S") {
         let soma00 = 40 * 15
 
         if (tempoTrabalho >= 2) {
-            let soma0 = soma00 * 0.15;
+            let soma0 = soma00 * 1.15;
             alert(`O salário bruto vai ser de R$${soma2}`);
 
             if (tempoTrabalho >= 4) {
-                let soma44 = soma00 * 0.25;
+                let soma44 = soma00 * 1.25;
                 alert(`O salário bruto vai ser de R$${soma4}`);
 
                 if (tempoTrabalho >= 6) {
-                    let soma66 = soma00 * 0.40;
+                    let soma66 = soma00 * 1.40;
                     alert(`O salário bruto será de R$${soma6}`)
 
                     if (tempoTrabalho < 2) {
